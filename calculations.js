@@ -6,8 +6,7 @@ function terCalc() {
     var redPT = parseInt(document.getElementById("redPT").value);
     var gameModeT = document.getElementById("gamemodeT").value;
     var resulT = document.getElementById("result");
-    document.getElementById("debugHP").innerText = hpT;
-
+    
     if (gameModeT == "classic") {
         var factor = 0.5;
     }
@@ -20,14 +19,8 @@ function terCalc() {
     else {
         var factor = 0.5;
     }
-    console.log(hpT);
-    console.log(defT);
-    console.log(redT);
-    console.log(redSBT);
-    console.log(redPT);
-    console.log(factor);
+    
     var ehpT = Math.floor((hpT * (1 + (redPT * 0.01)) * (1 + (redSBT * 0.01)) * (1 + (redT * 0.01))) + (defT * factor));
-    console.log(ehpT);
     resulT.innerText = ehpT;
 }
 function mineCalc() {
