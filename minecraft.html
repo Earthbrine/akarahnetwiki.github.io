@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EHP calculators</title>
+        <link href="interfaceDesign.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div></div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="terraria.html">Terraria</a>
+                <a href="#">Minecraft</a>
+                <a href="wynncraft.html">Wynncraft</a>
+            </div>
+            <div></div>
+        </header>
+        <div class="page">
+            <br>
+            <div class="calc">
+                <p><strong>HP:</strong></p><input type="text" id="hpM" name="hpM" value="0"><br>
+                <br>
+                <p><strong>Absorbtion level:</strong></p><input type="text" id="absM" name="absM" value="0"><br>
+                <br>
+                <p><strong>defense:</strong></p><input type="text" id="defM" name="defM" value="0"><br>
+                <br>
+                <p><strong>armour toughness:</strong></p><input type="text" id="tougM" name="tougM" value="0"><br>
+                <br>
+                <p><strong>protection total level:</strong></p><input type="text" id="protM" name="protM" value="0"><br>
+                <br>
+                <p><strong>resistance level:</strong></p><input type="text" id="resM" name="resM" value="0"><br>
+                <br>
+                <button onclick="mineCalc()">Calculate</button>
+                <p>Your EHP is: </p><p id="resultM"></p>
+            </div>
+        </div>
+        <script src="calculations.js"></script>
+    </body>
+</html>

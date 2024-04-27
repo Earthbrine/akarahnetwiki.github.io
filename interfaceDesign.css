@@ -1,0 +1,59 @@
+p {
+    display: inline;
+}
+input {
+    display: inline-block;
+}
+button {
+    display: inline-block;
+}
+
+body {
+    background-color: burlywood;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex: 0 0 content;
+    height: 50px;
+}
+header div {
+    flex: 1;
+}
+header div:first-child {
+    text-align: left;
+}
+header div:nth-child(2){
+    flex-basis: content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header div:last-child {
+    text-align: right;
+    padding-right: 10px;
+}
+header a {
+    color: white;
+    transition: border 200ms, color 200ms;
+    text-decoration: none;
+    padding: 2px 10px;
+    display: inline-block;
+}
+header a:hover {
+    border: 1px solid white;
+    color: white;
+}
+header a[href='#'] {
+    border: 3px solid white;
+    color: white;
+}
