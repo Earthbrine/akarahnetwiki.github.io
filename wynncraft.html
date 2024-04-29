@@ -18,17 +18,29 @@
         <div class="page">
             <br>
             <div class="calc">
-                <p><strong>HP:</strong></p><input type="text" id="hpM" name="hpM" value="0"><br>
+                <p><strong>Health:</strong></p><input type="text" id="hpW" name="hpW" value="0"><br>
                 <br>
-                <p><strong>Absorbtion level:</strong></p><input type="text" id="absM" name="absM" value="0"><br>
+                <p><strong>Overhealth %:</strong></p><input type="text" id="ohpW" name="ohpW" value="0"><br>
                 <br>
-                <p><strong>defense:</strong></p><input type="text" id="defM" name="defM" value="0"><br>
+                <p><strong>Defense:</strong></p><input type="text" id="defW" name="defW" value="0"><br>
                 <br>
-                <p><strong>armour toughness:</strong></p><input type="text" id="tougM" name="tougM" value="0"><br>
+                <p><strong>Agility:</strong></p><input type="text" id="agiW" name="agiW" value="0"><br>
                 <br>
-                <p><strong>protection total level:</strong></p><input type="text" id="protM" name="protM" value="0"><br>
+                <p><strong>Damage resistance(tomes):</strong></p><input type="text" id="drW" name="drW" value="0"><br>
                 <br>
-                <p><strong>resistance level:</strong></p><input type="text" id="resM" name="resM" value="0"><br>
+                <p><strong>Class:</strong></p>
+                <button onclick="wynnClass()">Archer</button><button onclick="wynnClass()">Warrior</button><button onclick="wynnClass()">Mage</button><button onclick="wynnClass()">Assassin</button><button onclick="wynnClass()">Shaman</button>
+                <br>
+                <p><strong>Major IDs:</strong></p>
+                <button onclick="wynnMID()">Divine Honor</button><button onclick="wynnMID()">Guardian</button><button onclick="wynnMID()">Saviour's Sacrifice</button>
+                <br>
+                <p><strong>Active abilities:</strong></p>
+                <button onclick="wynnAbil()">Radiance</button><button onclick="wynnAbil()">War Scream</button><button onclick="wynnAbil()">MotB</button><button onclick="wynnAbil()">BoM</button><button onclick="wynnAbil()">Martyr</button>
+                <button onclick="wynnAbil()">Mirror Image</button><button onclick="wynnAbil()">Dissolution</button><button onclick="wynnAbil()">Sunflare</button><button onclick="wynnAbil()">MotL</button>
+                <button onclick="wynnAbil()">MotF</button><button onclick="wynnAbil()">CotF</button>
+                <br>
+                <p><strong>Unlocked nodes:</strong></p>
+                <button></button>
                 <br>
                 <button onclick="wynnCalc()">Calculate</button>
                 <p>Your EHP is: </p><p id="resultW"></p>
