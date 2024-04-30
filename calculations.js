@@ -49,80 +49,80 @@ function mineCalc() {
 
 
 function wynnClassAr() {
-    document.getElementById("archer").style.border-width = "thick";
-    document.getElementById("warrior").style.border-width = "thin";
-    document.getElementById("mage").style.border-width = "thin";
-    document.getElementById("assassin").style.border-width = "thin";
-    document.getElementById("shaman").style.border-width = "thin";
+    document.getElementById("archer").style.border = "solid";
+    document.getElementById("warrior").style.border = "dotted";
+    document.getElementById("mage").style.border = "dotted";
+    document.getElementById("assassin").style.border = "dotted";
+    document.getElementById("shaman").style.border = "dotted";
 }
 function wynnClassWar() {
-    document.getElementById("warrior").style.border-width = "thick";
-    document.getElementById("archer").style.border-width = "thin";
-    document.getElementById("mage").style.border-width = "thin";
-    document.getElementById("assassin").style.border-width = "thin";
-    document.getElementById("shaman").style.border-width = "thin";
+    document.getElementById("warrior").style.border = "solid";
+    document.getElementById("archer").style.border = "dotted";
+    document.getElementById("mage").style.border = "dotted";
+    document.getElementById("assassin").style.border = "dotted";
+    document.getElementById("shaman").style.border = "dotted";
 }
 function wynnClassMag() {
-    document.getElementById("mage").style.border-width = "thick";
-    document.getElementById("archer").style.border-width = "thin";
-    document.getElementById("warrior").style.border-width = "thin";
-    document.getElementById("assassin").style.border-width = "thin";
-    document.getElementById("shaman").style.border-width = "thin";
+    document.getElementById("mage").style.border = "solid";
+    document.getElementById("archer").style.border = "dotted";
+    document.getElementById("warrior").style.border = "dotted";
+    document.getElementById("assassin").style.border = "dotted";
+    document.getElementById("shaman").style.border = "dotted";
 }
 function wynnClassAs() {
-    document.getElementById("assassin").style.border-width = "thick";
-    document.getElementById("archer").style.border-width = "thin";
-    document.getElementById("warrior").style.border-width = "thin";
-    document.getElementById("mage").style.border-width = "thin";
-    document.getElementById("shaman").style.border-width = "thin";
+    document.getElementById("assassin").style.border = "solid";
+    document.getElementById("archer").style.border = "dotted";
+    document.getElementById("warrior").style.border = "dotted";
+    document.getElementById("mage").style.border = "dotted";
+    document.getElementById("shaman").style.border = "dotted";
 }
 function wynnClassSha() {
-    document.getElementById("shaman").style.border-width = "thick";
-    document.getElementById("archer").style.border-width = "thin";
-    document.getElementById("warrior").style.border-width = "thin";
-    document.getElementById("mage").style.border-width = "thin";
-    document.getElementById("assassin").style.border-width = "thin";
+    document.getElementById("shaman").style.border = "solid";
+    document.getElementById("archer").style.border = "dotted";
+    document.getElementById("warrior").style.border = "dotted";
+    document.getElementById("mage").style.border = "dotted";
+    document.getElementById("assassin").style.border = "dotted";
 }
 
 function wynnMIDdh() {
     var dh = document.getElementById("divineHonor");
-    if (dh.style.border-width == "thin") {
-        dh.style.border-width = "thick";
+    if (dh.style.border == "dotted") {
+        dh.style.border = "solid";
     }
-    else if (dh.style.border-width == "thick") {
-        dh.style.border-width = "thin";
+    else if (dh.style.border == "solid") {
+        dh.style.border = "dotted";
     }
     else {
-        dh.style.border-width = "thick";
+        dh.style.border = "solid";
     }
 }
 function wynnMIDg() {
-    var g = document.getElementById("guardian").style.border-width;
-    if (g.style.border-width == "thin") {
-        g.style.border-width = "thick";
+    var g = document.getElementById("guardian").style.border;
+    if (g.style.border == "dotted") {
+        g.style.border = "solid";
     }
-    else if (g.style.border-width == "thick") {
-        g.style.border-width = "thin";
+    else if (g.style.border == "solid") {
+        g.style.border = "dotted";
     }
     else {
-        g.style.border-width = "thick";
+        g.style.border = "solid";
     }
 }
 function wynnMIDss() {
-    var ss = document.getElementById("savioursSacrifice").style.border-width;
-    if (ss.style.border-width == "thin") {
-        ss.style.border-width = "thick";
+    var ss = document.getElementById("savioursSacrifice").style.border;
+    if (ss.style.border == "dotted") {
+        ss.style.border = "solid";
     }
-    else if (ss.style.border-width == "thick") {
-        ss.style.border-width = "thin";
+    else if (ss.style.border == "solid") {
+        ss.style.border = "dotted";
     }
     else {
-        ss.style.border-width = "thick";
+        ss.style.border = "solid";
     }
 }
 
 function wynnAbilR() {
-    var r = document.getElementById("radiance").style.border-width;
+    var r = document.getElementById("radiance").style.border;
 }
 function wynnAbilWS() {}
 function wynnAbilMOTB() {}
