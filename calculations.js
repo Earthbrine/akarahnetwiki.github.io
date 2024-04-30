@@ -46,3 +46,44 @@ function mineCalc() {
     var ehpM = Math.floor((hpM + absCal) * (resCal) * (defCal) * (protCal));
     document.getElementById("resultM").innerText = ehpM;
 }
+
+
+function wynnClassAr() {
+    document.getElementById("archer").style.border-width = "thick";
+    document.getElementById("warrior").style.border-width = "thin";
+    document.getElementById("mage").style.border-width = "thin";
+    document.getElementById("assassin").style.border-width = "thin";
+    document.getElementById("shaman").style.border-width = "thin";
+}
+function wynnClassWar() {
+    document.getElementById("warrior").style.border-width = "thick";
+    document.getElementById("archer").style.border-width = "thin";
+    document.getElementById("mage").style.border-width = "thin";
+    document.getElementById("assassin").style.border-width = "thin";
+    document.getElementById("shaman").style.border-width = "thin";
+}
+function wynnClassMag() {
+    document.getElementById("mage").style.border-width = "thick";
+    document.getElementById("archer").style.border-width = "thin";
+    document.getElementById("warrior").style.border-width = "thin";
+    document.getElementById("assassin").style.border-width = "thin";
+    document.getElementById("shaman").style.border-width = "thin";
+}
+function wynnClassAs() {
+    document.getElementById("assassin").style.border-width = "thick";
+    document.getElementById("archer").style.border-width = "thin";
+    document.getElementById("warrior").style.border-width = "thin";
+    document.getElementById("mage").style.border-width = "thin";
+    document.getElementById("shaman").style.border-width = "thin";
+}
+function wynnClassSha() {
+    document.getElementById("shaman").style.border-width = "thick";
+    document.getElementById("archer").style.border-width = "thin";
+    document.getElementById("warrior").style.border-width = "thin";
+    document.getElementById("mage").style.border-width = "thin";
+    document.getElementById("assassin").style.border-width = "thin";
+}
+
+function wynnCalc() {
+    var hpW = parseInt(document.getElementById("hpW").value);
+}
