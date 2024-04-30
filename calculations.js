@@ -123,20 +123,161 @@ function wynnMIDss() {
 
 function wynnAbilR() {
     var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
 }
-function wynnAbilWS() {}
-function wynnAbilMOTB() {}
-function wynnAbilBOM() {}
-function wynnAbilM() {}
-function wynnAbilMI() {}
-function wynnAbilD() {}
-function wynnAbilS() {}
-function wynnAbilMOTL() {}
-function wynnAbilMOTF() {}
-function wynnAbilCOTF() {}
+function wynnAbilWS() {
+    var ws = document.getElementById("warScream");
+    if (ws.style.border == "dotted") {
+        ws.style.border = "solid";
+    }
+    else if (ws.style.border == "solid") {
+        ws.style.border = "dotted";
+    }
+    else {
+        ws.style.border = "solid";
+    }
+}
+function wynnAbilMOTB() {
+    var motb = document.getElementById("mantleOfTheBovimist");
+    if (motb.style.border == "dotted") {
+        motb.style.border = "solid";
+    }
+    else if (motb.style.border == "solid") {
+        motb.style.border = "dotted";
+    }
+    else {
+        motb.style.border = "solid";
+    }
+}
+function wynnAbilBOM() {
+    var bom = document.getElementById("brinkOfMadness");
+    if (bom.style.border == "dotted") {
+        bom.style.border = "solid";
+    }
+    else if (bom.style.border == "solid") {
+        bom.style.border = "dotted";
+    }
+    else {
+        bom.style.border = "solid";
+    }
+}
+function wynnAbilM() {
+    var m = document.getElementById("martyr");
+    if (m.style.border == "dotted") {
+        m.style.border = "solid";
+    }
+    else if (m.style.border == "solid") {
+        m.style.border = "dotted";
+    }
+    else {
+        m.style.border = "solid";
+    }
+}
+function wynnAbilMI() {
+    var mi = document.getElementById("mirrorImage");
+    if (mi.style.border == "dotted") {
+        mi.style.border = "solid";
+    }
+    else if (mi.style.border == "solid") {
+        mi.style.border = "dotted";
+    }
+    else {
+        mi.style.border = "solid";
+    }
+}
+function wynnAbilD() {
+    var d = document.getElementById("dissolution");
+    if (d.style.border == "dotted") {
+        d.style.border = "solid";
+    }
+    else if (d.style.border == "solid") {
+        d.style.border = "dotted";
+    }
+    else {
+        d.style.border = "solid";
+    }
+}
+function wynnAbilS() {
+        var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
+}
+function wynnAbilMOTL() {
+        var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
+}
+function wynnAbilMOTF() {
+        var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
+}
+function wynnAbilCOTF() {
+        var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
+}
 
-function wynnNodeTS() {}
-function wynnNodeMS() {}
+function wynnNodeTS() {
+        var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
+}
+function wynnNodeMS() {
+        var r = document.getElementById("radiance");
+    if (r.style.border == "dotted") {
+        r.style.border = "solid";
+    }
+    else if (r.style.border == "solid") {
+        r.style.border = "dotted";
+    }
+    else {
+        r.style.border = "solid";
+    }
+}
 
 function wynnCalc() {
     var hpW = parseInt(document.getElementById("hpW").value);
