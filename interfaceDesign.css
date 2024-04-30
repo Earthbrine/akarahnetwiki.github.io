@@ -9,6 +9,9 @@ button {
     border-width: thin;
     border-color: black;
 }
+button:active {
+    background-color: blue;
+}
 
 body {
     background-color: burlywood;
