@@ -7,11 +7,10 @@ input {
 button {
     display: inline-block;
     border-width: thin;
+    border: dotted;
     border-color: black;
 }
-button:active {
-    background-color: blue;
-}
+
 
 body {
     background-color: burlywood;
