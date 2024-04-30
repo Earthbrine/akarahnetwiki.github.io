@@ -97,7 +97,7 @@ function wynnMIDdh() {
     }
 }
 function wynnMIDg() {
-    var g = document.getElementById("guardian").style.border;
+    var g = document.getElementById("guardian");
     if (g.style.border == "dotted") {
         g.style.border = "solid";
     }
@@ -109,7 +109,7 @@ function wynnMIDg() {
     }
 }
 function wynnMIDss() {
-    var ss = document.getElementById("savioursSacrifice").style.border;
+    var ss = document.getElementById("savioursSacrifice");
     if (ss.style.border == "dotted") {
         ss.style.border = "solid";
     }
@@ -122,7 +122,7 @@ function wynnMIDss() {
 }
 
 function wynnAbilR() {
-    var r = document.getElementById("radiance").style.border;
+    var r = document.getElementById("radiance");
 }
 function wynnAbilWS() {}
 function wynnAbilMOTB() {}
