@@ -6,6 +6,8 @@ input {
 }
 button {
     display: inline-block;
+    border-width: thin;
+    border-color: black;
 }
 
 body {
