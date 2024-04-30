@@ -84,6 +84,57 @@ function wynnClassSha() {
     document.getElementById("assassin").style.border-width = "thin";
 }
 
+function wynnMIDdh() {
+    var dh = document.getElementById("divineHonor");
+    if (dh.style.border-width == "thin") {
+        dh.style.border-width = "thick";
+    }
+    else if (dh.style.border-width == "thick") {
+        dh.style.border-width = "thin";
+    }
+    else {
+        dh.style.border-width = "thick";
+    }
+}
+function wynnMIDg() {
+    var g = document.getElementById("guardian").style.border-width;
+    if (g.style.border-width == "thin") {
+        g.style.border-width = "thick";
+    }
+    else if (g.style.border-width == "thick") {
+        g.style.border-width = "thin";
+    }
+    else {
+        g.style.border-width = "thick";
+    }
+}
+function wynnMIDss() {
+    var ss = document.getElementById("savioursSacrifice").style.border-width;
+    if (ss.style.border-width == "thin") {
+        ss.style.border-width = "thick";
+    }
+    else if (ss.style.border-width == "thick") {
+        ss.style.border-width = "thin";
+    }
+    else {
+        ss.style.border-width = "thick";
+    }
+}
+
+function wynnAbilR() {}
+function wynnAbilWS() {}
+function wynnAbilMOTB() {}
+function wynnAbilBOM() {}
+function wynnAbilM() {}
+function wynnAbilMI() {}
+function wynnAbilD() {}
+function wynnAbilS() {}
+function wynnAbilMOTL() {}
+function wynnAbilMOTF() {}
+function wynnAbilCOTF() {}
+
+function
+
 function wynnCalc() {
     var hpW = parseInt(document.getElementById("hpW").value);
 }
