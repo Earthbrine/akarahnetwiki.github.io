@@ -121,7 +121,9 @@ function wynnMIDss() {
     }
 }
 
-function wynnAbilR() {}
+function wynnAbilR() {
+    var r = document.getElementById("radiance").style.border-width;
+}
 function wynnAbilWS() {}
 function wynnAbilMOTB() {}
 function wynnAbilBOM() {}
@@ -133,7 +135,8 @@ function wynnAbilMOTL() {}
 function wynnAbilMOTF() {}
 function wynnAbilCOTF() {}
 
-function
+function wynnNodeTS() {}
+function wynnNodeMS() {}
 
 function wynnCalc() {
     var hpW = parseInt(document.getElementById("hpW").value);
