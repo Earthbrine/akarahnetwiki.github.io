@@ -226,26 +226,32 @@ function wynnAbilS() {
 }
 function wynnAbilMOTL() {
     var motl = document.getElementById("maskOfTheLunatic");
+    var motf = document.getElementById("maskOfTheFanatic");
     if (motl.style.border == "dotted") {
         motl.style.border = "solid";
+        motf.style.border = "dotted";
     }
     else if (motl.style.border == "solid") {
         motl.style.border = "dotted";
     }
     else {
         motl.style.border = "solid";
+        motf.style.border = "dotted";
     }
 }
 function wynnAbilMOTF() {
+    var motl = document.getElementById("maskOfTheLunatic");
     var motf = document.getElementById("maskOfTheFanatic");
     if (motf.style.border == "dotted") {
         motf.style.border = "solid";
+        motl.style.border = "dotted";
     }
     else if (motf.style.border == "solid") {
         motf.style.border = "dotted";
     }
     else {
         motf.style.border = "solid";
+        motl.style.border = "dotted";
     }
 }
 function wynnAbilCOTF() {
@@ -370,8 +376,13 @@ function wynnCalc() {
         var clssW = -0.4;
         //preventing errors
         var maskMulti = 0;
-        //checking which masks are active INCOMPLETE
-        if (motl.style.border == "solid" && motf.style.border == "dotted") {}
+        //checking which masks are active
+        if (motl.style.border == "solid") {
+            var maskMulti = -0.2;
+        }
+        if (motf.style.border == "solid") {
+            var maskMulti = 0.35;
+        }
     }
     else {
         //A class is necessary for the calculations
@@ -386,8 +397,12 @@ function wynnCalc() {
     if (ss.style.border == "solid") {
         var ssW = 0.2
     }
-
+    //preventing errors
+    var rW = 0;
+    var wsW = 0;
+    var cotfW = 0;
     //checking which general buffs are selected
+    if (r.style.border == "solid"
     
     var ehpWynn = (1+gW) * ((((hpW + hpbW) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW)))
 }
