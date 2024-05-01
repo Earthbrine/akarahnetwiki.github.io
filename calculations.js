@@ -206,76 +206,76 @@ function wynnAbilD() {
     }
 }
 function wynnAbilS() {
-        var r = document.getElementById("radiance");
-    if (r.style.border == "dotted") {
-        r.style.border = "solid";
+    var s = document.getElementById("sunflare");
+    if (s.style.border == "dotted") {
+        s.style.border = "solid";
     }
-    else if (r.style.border == "solid") {
-        r.style.border = "dotted";
+    else if (s.style.border == "solid") {
+        s.style.border = "dotted";
     }
     else {
-        r.style.border = "solid";
+        s.style.border = "solid";
     }
 }
 function wynnAbilMOTL() {
-        var r = document.getElementById("radiance");
-    if (r.style.border == "dotted") {
-        r.style.border = "solid";
+    var motl = document.getElementById("maskOfTheLunatic");
+    if (motl.style.border == "dotted") {
+        motl.style.border = "solid";
     }
-    else if (r.style.border == "solid") {
-        r.style.border = "dotted";
+    else if (motl.style.border == "solid") {
+        motl.style.border = "dotted";
     }
     else {
-        r.style.border = "solid";
+        motl.style.border = "solid";
     }
 }
 function wynnAbilMOTF() {
-        var r = document.getElementById("radiance");
-    if (r.style.border == "dotted") {
-        r.style.border = "solid";
+    var motf = document.getElementById("maskOfTheFanatic");
+    if (motf.style.border == "dotted") {
+        motf.style.border = "solid";
     }
-    else if (r.style.border == "solid") {
-        r.style.border = "dotted";
+    else if (motf.style.border == "solid") {
+        motf.style.border = "dotted";
     }
     else {
-        r.style.border = "solid";
+        motf.style.border = "solid";
     }
 }
 function wynnAbilCOTF() {
-        var r = document.getElementById("radiance");
-    if (r.style.border == "dotted") {
-        r.style.border = "solid";
+    var cotf = document.getElementById("chantOfTheFanatic");
+    if (cotf.style.border == "dotted") {
+        cotf.style.border = "solid";
     }
     else if (r.style.border == "solid") {
-        r.style.border = "dotted";
+        cotf.style.border = "dotted";
     }
     else {
-        r.style.border = "solid";
+        cotf.style.border = "solid";
     }
 }
 
 function wynnNodeTS() {
-        var r = document.getElementById("radiance");
-    if (r.style.border == "dotted") {
-        r.style.border = "solid";
+    var ts = document.getElementById("tougherSkin");
+    if (ts.style.border == "dotted") {
+        ts.style.border = "solid";
     }
-    else if (r.style.border == "solid") {
-        r.style.border = "dotted";
+    else if (ts.style.border == "solid") {
+        ts.style.border = "dotted";
     }
     else {
-        r.style.border = "solid";
+        ts.style.border = "solid";
     }
 }
 function wynnNodeMS() {
-        var r = document.getElementById("radiance");
-    if (r.style.border == "dotted") {
-        r.style.border = "solid";
+    var ms = document.getElementById("mythrilSkin");
+    if (ms.style.border == "dotted") {
+        ms.style.border = "solid";
     }
-    else if (r.style.border == "solid") {
-        r.style.border = "dotted";
+    else if (ms.style.border == "solid") {
+        ms.style.border = "dotted";
     }
     else {
-        r.style.border = "solid";
+        ms.style.border = "solid";
     }
 }
 
