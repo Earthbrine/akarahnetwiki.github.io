@@ -1,3 +1,4 @@
+//TERRARIA
 function terCalc() {
     var hpT = parseInt(document.getElementById("hpT").value);
     var defT = parseInt(document.getElementById("defT").value);
@@ -23,6 +24,8 @@ function terCalc() {
     var ehpT = Math.floor((hpT * (1 + (redPT * 0.01)) * (1 + (redSBT * 0.01)) * (1 + (redT * 0.01))) + (defT * factor));
     resulT.innerText = ehpT;
 }
+
+//MINECRAFT
 function mineCalc() {
     var hpM = parseInt(document.getElementById("hpM").value);
     var absM = parseInt(document.getElementById("absM").value);
@@ -47,7 +50,9 @@ function mineCalc() {
     document.getElementById("resultM").innerText = ehpM;
 }
 
+//WYNNCRAFT
 
+//class buttons
 function wynnClassAr() {
     document.getElementById("archer").style.border = "solid";
     document.getElementById("warrior").style.border = "dotted";
@@ -84,6 +89,7 @@ function wynnClassSha() {
     document.getElementById("assassin").style.border = "dotted";
 }
 
+//Major ID buttons
 function wynnMIDdh() {
     var dh = document.getElementById("divineHonor");
     if (dh.style.border == "dotted") {
@@ -121,6 +127,7 @@ function wynnMIDss() {
     }
 }
 
+//buff buttons
 function wynnAbilR() {
     var r = document.getElementById("radiance");
     if (r.style.border == "dotted") {
@@ -254,6 +261,7 @@ function wynnAbilCOTF() {
     }
 }
 
+//node buttons
 function wynnNodeTS() {
     var ts = document.getElementById("tougherSkin");
     if (ts.style.border == "dotted") {
@@ -280,5 +288,106 @@ function wynnNodeMS() {
 }
 
 function wynnCalc() {
+    //taking values from inputs
     var hpW = parseInt(document.getElementById("hpW").value);
+    var hpbW = parseInt(document.getElementById("hpbW").value);
+    var ophW = parseInt(document.getElementById("ohpW").value);
+
+    //defining classes
+    var clAr = document.getElementById("archer");
+    var clWar = document.getElementById("warrior");
+    var clMag = document.getElementById("mage");
+    var clAs = document.getElementById("assassin");
+    var clSha = document.getElementById("shaman");
+
+    //defining Major IDs
+    var dh = document.getElementById("divineHonor");
+    var g = document.getElementById("guardian");
+    var ss = document.getElementById("savioursSacrifice");
+
+    //defining buffs
+    var r = document.getElementById("radiance");
+    var ws = document.getElementById("warScream");
+    var motb = document.getElementById("mantleOfTheBovimist");
+    var bom = document.getElementById("brinkOfMadness");
+    var m = document.getElementById("martyr");
+    var mi = document.getElementById("mirrorImage");
+    var d = document.getElementById("dissolution");
+    var s = document.getElementById("sunflare");
+    var motl = document.getElementById("maskOfTheLunatic");
+    var motf = document.getElementById("maskOfTheFanatic");
+    var cotf = document.getElementById("chantOfTheFanatic");
+
+    //defining nodes
+    var ts = document.getElementById("tougherSkin");
+    var ms = document.getElementById("mythrilSkin");
+    
+    //checking which class is selected, and checking class-specific buffs
+    if (clAr.style.border == "solid") {
+        var clssW = -0.3;
+    }
+    else if (clWar.style.border == "solid") {
+        var clssW = 0;
+        var hpMultiplir = 1;
+        //preventing errors
+        var motbW = 0;
+        var bomW = 0;
+        
+        //checking if Mantle is active
+        if (motb.style.border == "solid") {
+            var motbW = 0.7;
+        }
+        //checking nodes
+        if (ts.style.border == "solid") {
+            clssW += 0.05;
+        }
+        if (ms.style.border == "solid") {
+            clssW += 0.05;
+        }
+        //checking if brink is active, and reducing health accordingly
+        if (bom.style.border == "solid") {
+            var bomW = 0.4;
+            var hpMultiplir = 0.25;
+        }
+    }
+    else if (clMag.style.border == "solid") {
+        var clssW = -0.2;
+    }
+    else if (clAs.style.border == "solid") {
+        var clssW = 0;
+        //preventing errors
+        var dW = 0;
+        var miW = 0;
+        //checking if dissolution and/or mirror image are active
+        if (d.style.border == "solid") {
+            var dW = 0.75;
+        }
+        if (mi.style.border == "solid") {
+            var miW = 0.6;
+        }
+    }
+    else if (clSha.style.border == "solid") {
+        var clssW = -0.4;
+        //preventing errors
+        var maskMulti = 0;
+        //checking which masks are active INCOMPLETE
+        if (motl.style.border == "solid" && motf.style.border == "dotted") {}
+    }
+    else {
+        //A class is necessary for the calculations
+        document.getElementById("resultW").innerText = "You must select a class";
+        return
+    }
+
+    //checking which Major IDs are selected, but since Divine Honor affects radiance directly, it's not checked here
+    if (g.style.border == "solid") {
+        var gW = 0.2;
+    }
+    if (ss.style.border == "solid") {
+        var ssW = 0.2
+    }
+
+    //checking which general buffs are selected
+    
+    var ehpWynn = (1+gW) * ((((hpW + hpbW) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW)))
 }
