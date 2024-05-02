@@ -397,12 +397,40 @@ function wynnCalc() {
     if (ss.style.border == "solid") {
         var ssW = 0.2
     }
+    
     //preventing errors
     var rW = 0;
     var wsW = 0;
     var cotfW = 0;
-    //checking which general buffs are selected
-    if (r.style.border == "solid"
     
-    var ehpWynn = (1+gW) * ((((hpW + hpbW) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW)))
+    //checking which general buffs are selected
+    if (r.style.border == "solid") {
+        if (dh.style.border == "solid") {
+            var rW = 0.25;
+        }
+        else {
+            var rW = 0.2;
+        }
+    }
+    if (ws.style.border == "solid") {
+        var wsW = 0.2;
+    }
+    if (cotf.style.border == "solid") {
+        var cotfW = 0.7;
+    }
+    
+    //checking whether the player is invicible
+    if (m.style.border == "solid") {
+        document.getElementById("resultW").innerText = "infinite";
+        return
+    }
+    if (s.style.border == "solid") {
+        document.getElementById("resultW").innerText = "infinite";
+        return
+    }
+    
+    var hpWb = hpbW * (1 + rW);
+    
+    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-motlW) * (1-motfW)));
+    document.getElementById("resultW").innerText = ehpWynn;
 }
