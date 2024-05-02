@@ -398,6 +398,7 @@ function wynnCalc() {
     else {
         //A class is necessary for the calculations
         document.getElementById("resultW").innerText = "You must select a class";
+        return
     }
 
     //checking which Major IDs are selected, but since Divine Honor affects radiance directly, it's not checked here
@@ -432,18 +433,20 @@ function wynnCalc() {
     //checking whether the player is invicible
     if (m.style.border == "solid") {
         document.getElementById("resultW").innerText = "infinite";
+        return
     }
     if (s.style.border == "solid") {
         document.getElementById("resultW").innerText = "infinite";
+        return
     }
 
     //debugging
     document.getElementById("debugHP").innerText = hpW;
-    document.getElementById("debugCOTF").innerText = cotfW;
-    document.getElementById("debugClass").innerText = clssW;
+    document.getElementById("debugCOTF").innerText = hpbW;
+    document.getElementById("debugClass").innerText = ohpW;
     
     var hpWb = hpbW * (1 + rW);
     
-    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-maskMulti) * (1-cotfW) * (1-Wdef) * (1-Wagi)));
+    var ehpWynn = Math.floor((1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-maskMulti) * (1-cotfW) * (1-Wdef) * (1-Wagi) * (1-(drW*0.01)))));
     document.getElementById("resultW").innerText = ehpWynn;
 }
