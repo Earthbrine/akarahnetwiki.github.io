@@ -387,7 +387,6 @@ function wynnCalc() {
     else {
         //A class is necessary for the calculations
         document.getElementById("resultW").innerText = "You must select a class";
-        return
     }
 
     //checking which Major IDs are selected, but since Divine Honor affects radiance directly, it's not checked here
@@ -422,11 +421,9 @@ function wynnCalc() {
     //checking whether the player is invicible
     if (m.style.border == "solid") {
         document.getElementById("resultW").innerText = "infinite";
-        return
     }
     if (s.style.border == "solid") {
         document.getElementById("resultW").innerText = "infinite";
-        return
     }
     
     var hpWb = hpbW * (1 + rW);
