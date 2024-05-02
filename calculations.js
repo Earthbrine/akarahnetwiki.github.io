@@ -441,9 +441,9 @@ function wynnCalc() {
     }
 
     //debugging
-    document.getElementById("debugHP").innerText = hpW;
-    document.getElementById("debugCOTF").innerText = hpbW;
-    document.getElementById("debugClass").innerText = ohpW;
+    document.getElementById("debugHP").innerText = hpMultiplir;
+    document.getElementById("debugCOTF").innerText = drW;
+    document.getElementById("debugClass").innerText = defW;
     
     var hpWb = hpbW * (1 + rW);
     
