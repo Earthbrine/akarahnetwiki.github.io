@@ -444,6 +444,6 @@ function wynnCalc() {
     
     var hpWb = hpbW * (1 + rW);
     
-    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-motlW) * (1-motfW) * (1-cotfW) * (1-Wdef) * (1-Wagi)));
+    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-maskMulti) * (1-cotfW) * (1-Wdef) * (1-Wagi)));
     document.getElementById("resultW").innerText = ehpWynn;
 }
