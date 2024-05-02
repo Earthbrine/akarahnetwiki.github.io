@@ -298,6 +298,9 @@ function wynnCalc() {
     var hpW = parseInt(document.getElementById("hpW").value);
     var hpbW = parseInt(document.getElementById("hpbW").value);
     var ophW = parseInt(document.getElementById("ohpW").value);
+    var defW = parseInt(document.getElementById("defW").value);
+    var agiW = parseInt(document.getElementById("agiW").value);
+    var drW = parseInt(document.getElementById("drW").value);
 
     //defining classes
     var clAr = document.getElementById("archer");
@@ -327,6 +330,14 @@ function wynnCalc() {
     //defining nodes
     var ts = document.getElementById("tougherSkin");
     var ms = document.getElementById("mythrilSkin");
+
+    //converting defense value to actual damage reduction value, checking if there is any agility
+    var Wdef = defW * 0.0047;
+    var Wagi = 0;
+    if (agiW >= 1) {
+        var Wagi = 0.9;
+    }
+    
     
     //checking which class is selected, and checking class-specific buffs
     if (clAr.style.border == "solid") {
@@ -428,6 +439,6 @@ function wynnCalc() {
     
     var hpWb = hpbW * (1 + rW);
     
-    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-motlW) * (1-motfW)));
+    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-motlW) * (1-motfW) * (1-Wdef) * (1-Wagi)));
     document.getElementById("resultW").innerText = ehpWynn;
 }
