@@ -338,18 +338,19 @@ function wynnCalc() {
         var aWgi = 0.9;
     }
     
-    
+    //preventing class-specific errors
+    var hpMultiplir = 1;
+    var motbW = 0;
+    var bomW = 0;
+    var dW = 0;
+    var miW = 0;
+    var maskMulti = 0;
     //checking which class is selected, and checking class-specific buffs
     if (clAr.style.border == "solid") {
         var clssW = -0.3;
     }
     else if (clWar.style.border == "solid") {
         var clssW = 0;
-        var hpMultiplir = 1;
-        //preventing errors
-        var motbW = 0;
-        var bomW = 0;
-        
         //checking if Mantle is active
         if (motb.style.border == "solid") {
             var motbW = 0.7;
@@ -372,9 +373,6 @@ function wynnCalc() {
     }
     else if (clAs.style.border == "solid") {
         var clssW = 0;
-        //preventing errors
-        var dW = 0;
-        var miW = 0;
         //checking if dissolution and/or mirror image are active
         if (d.style.border == "solid") {
             var dW = 0.75;
@@ -385,8 +383,6 @@ function wynnCalc() {
     }
     else if (clSha.style.border == "solid") {
         var clssW = -0.4;
-        //preventing errors
-        var maskMulti = 0;
         //checking which masks are active
         if (motl.style.border == "solid") {
             var maskMulti = -0.2;
@@ -400,7 +396,9 @@ function wynnCalc() {
         document.getElementById("resultW").innerText = "You must select a class";
         return
     }
-
+    //preventing MID errors
+    var gW = 0;
+    var ssW = 0;
     //checking which Major IDs are selected, but since Divine Honor affects radiance directly, it's not checked here
     if (g.style.border == "solid") {
         var gW = 0.2;
