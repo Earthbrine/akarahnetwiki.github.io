@@ -332,10 +332,10 @@ function wynnCalc() {
     var ms = document.getElementById("mythrilSkin");
 
     //converting defense value to actual damage reduction value, checking if there is any agility
-    var Wdef = defW * 0.0047;
-    var Wagi = 0;
+    var dWef = defW * 0.0047;
+    var aWgi = 0;
     if (agiW >= 1) {
-        var Wagi = 0.9;
+        var aWgi = 0.9;
     }
     
     
@@ -447,6 +447,6 @@ function wynnCalc() {
     
     var hpWb = hpbW * (1 + rW);
     
-    var ehpWynn = Math.floor((1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-maskMulti) * (1-cotfW) * (1-Wdef) * (1-Wagi) * (1-(drW*0.01)))));
+    var ehpWynn = Math.floor((1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-maskMulti) * (1-cotfW) * (1-dWef) * (1-aWgi) * (1-(drW*0.01)))));
     document.getElementById("resultW").innerText = ehpWynn;
 }
