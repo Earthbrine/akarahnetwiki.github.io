@@ -259,7 +259,7 @@ function wynnAbilCOTF() {
     if (cotf.style.border == "dotted") {
         cotf.style.border = "solid";
     }
-    else if (r.style.border == "solid") {
+    else if (cotf.style.border == "solid") {
         cotf.style.border = "dotted";
     }
     else {
@@ -444,6 +444,6 @@ function wynnCalc() {
     
     var hpWb = hpbW * (1 + rW);
     
-    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-dhW) * (1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-motlW) * (1-motfW) * (1-cotfW) * (1-Wdef) * (1-Wagi)));
+    var ehpWynn = (1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-motlW) * (1-motfW) * (1-cotfW) * (1-Wdef) * (1-Wagi)));
     document.getElementById("resultW").innerText = ehpWynn;
 }
