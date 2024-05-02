@@ -442,8 +442,8 @@ function wynnCalc() {
 
     //debugging
     document.getElementById("debugHP").innerText = hpMultiplir;
-    document.getElementById("debugCOTF").innerText = drW;
-    document.getElementById("debugClass").innerText = defW;
+    document.getElementById("debugCOTF").innerText = Wdef;
+    document.getElementById("debugClass").innerText = Wagi;
     
     var hpWb = hpbW * (1 + rW);
     
