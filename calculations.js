@@ -297,7 +297,7 @@ function wynnCalc() {
     //taking values from inputs
     var hpW = parseInt(document.getElementById("hpW").value);
     var hpbW = parseInt(document.getElementById("hpbW").value);
-    var ophW = parseInt(document.getElementById("ohpW").value);
+    var ohpW = parseInt(document.getElementById("ohpW").value);
     var defW = parseInt(document.getElementById("defW").value);
     var agiW = parseInt(document.getElementById("agiW").value);
     var drW = parseInt(document.getElementById("drW").value);
