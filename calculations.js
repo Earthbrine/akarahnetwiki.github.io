@@ -439,13 +439,27 @@ function wynnCalc() {
         document.getElementById("resultW").innerText = "infinite";
         return
     }
-
-    //debugging
-    document.getElementById("debugHP").innerText = hpMultiplir;
-    document.getElementById("debugCOTF").innerText = Wdef;
-    document.getElementById("debugClass").innerText = Wagi;
     
     var hpWb = hpbW * (1 + rW);
+
+    //debugging
+    console.log(gW);
+    console.log(hpW);
+    console.log(hpWb);
+    console.log(hpMultiplir);
+    console.log(ohpW);
+    console.log(ssW);
+    console.log(rW);
+    console.log(wsW);
+    console.log(motbW);
+    console.log(bomW);
+    console.log(miW);
+    console.log(dW);
+    console.log(maskMulti);
+    console.log(cotfW);
+    console.log(dWef);
+    console.log(aWgi);
+    console.log(drW);
     
     var ehpWynn = Math.floor((1+gW) * ((((hpW + hpWb) * hpMultiplir) * (1 + (ohpW * 0.01)))/((1-ssW) * (1-clssW) * (1-rW) * (1-wsW) * (1-motbW) * (1-bomW) * (1-miW) * (1-dW) * (1-maskMulti) * (1-cotfW) * (1-dWef) * (1-aWgi) * (1-(drW*0.01)))));
     document.getElementById("resultW").innerText = ehpWynn;
