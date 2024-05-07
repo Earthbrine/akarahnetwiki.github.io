@@ -1,24 +1,74 @@
 //TERRARIA
+function clssT() {
+    var classic = document.getElementById("classic");
+    var expert = document.getElementById("expert");
+    var master = document.getElementById("master");
+    if (classic.style.border == "dotted") {
+        classic.style.border = "solid";
+        expert.style.border = "dotted";
+        master.style.border = "dotted";
+    }
+    else {
+        classic.style.border = "solid";
+        expert.style.border = "dotted";
+        master.style.border = "dotted";
+    }
+}
+function exprtT() {
+    var classic = document.getElementById("classic");
+    var expert = document.getElementById("expert");
+    var master = document.getElementById("master");
+    if (expert.style.border == "dotted") {
+        expert.style.border = "solid";
+        classic.style.border = "dotted";
+        master.style.border = "dotted";
+    }
+    else {
+        expert.style.border = "solid";
+        classic.style.border = "dotted";
+        master.style.border = "dotted";
+    }
+}
+function mstrT() {
+    var classic = document.getElementById("classic");
+    var expert = document.getElementById("expert");
+    var master = document.getElementById("master");
+    if (master.style.border == "dotted") {
+        master.style.border = "solid";
+        expert.style.border = "dotted";
+        classic.style.border = "dotted";
+    }
+    else {
+        master.style.border = "solid";
+        expert.style.border = "dotted";
+        classic.style.border = "dotted";
+    }
+}
 function terCalc() {
     var hpT = parseInt(document.getElementById("hpT").value);
     var defT = parseInt(document.getElementById("defT").value);
     var redT = parseInt(document.getElementById("redT").value);
     var redSBT = parseInt(document.getElementById("redSBT").value);
     var redPT = parseInt(document.getElementById("redPT").value);
-    var gameModeT = document.getElementById("gamemodeT").value;
+    
+    var classic = document.getElementById("classic");
+    var expert = document.getElementById("expert");
+    var master = document.getElementById("master");
+    
     var resulT = document.getElementById("result");
     
-    if (gameModeT == "classic") {
+    if (classic.style.border == "solid") {
         var factor = 0.5;
     }
-    else if (gameModeT == "expert") {
+    else if (expert.style.border == "solid") {
         var factor = 0.75;
     }
-    else if (gameModeT == "master") {
+    else if (master.style.border == "solid") {
         var factor = 1;
     }
     else {
-        var factor = 0.5;
+        resulT.innerText = "You must select a difficulty";
+        return
     }
     
     var ehpT = Math.floor((hpT * (1 + (redPT * 0.01)) * (1 + (redSBT * 0.01)) * (1 + (redT * 0.01))) + (defT * factor));
