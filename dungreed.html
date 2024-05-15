@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EHP calculators</title>
+        <link href="interfaceDesign.css" rel="stylesheet">
+        <link rel="icon" href="logoEHP.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div></div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="terraria.html">Terraria</a>
+                <a href="minecraft.html">Minecraft</a>
+                <a href="wynncraft.html">Wynncraft</a>
+                <a href="stardew.html">Stardew Valley</a>
+                <a href="#">Dungreed</a>
+            </div>
+            <div></div>
+        </header>
+        <div class="page">
+            <br>
+            <div class="calc">
+                <p><strong>HP:</strong></p><input type="text" id="hpS" name="hpS" value="0"><br>
+                <br>
+                <p><strong>defense:</strong></p><input type="text" id="defS" name="defS" value="0"><br>
+                <br>
+                <p><strong>Miscellaneous:</strong></p><br>
+                <button onclick="yoba()" id="yobaRing">Yoba's Blessing</button><br>
+                <br>
+                <button onclick="dungCalc()">Calculate</button>
+                <p>Your EHP is: </p><p id="resultD"></p>
+            </div>
+        </div>
+        <script src="calculations.js"></script>
+    </body>
+</html>
