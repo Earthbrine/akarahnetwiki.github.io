@@ -23,12 +23,14 @@
         <div class="page">
             <br>
             <div class="calc">
-                <p><strong>HP:</strong></p><input type="text" id="hpS" name="hpS" value="0"><br>
+                <p><strong>HP:</strong></p><input type="text" id="hpD" name="hpD" value="0"><br>
                 <br>
-                <p><strong>defense:</strong></p><input type="text" id="defS" name="defS" value="0"><br>
+                <p><strong>Defense:</strong></p><input type="text" id="defD" name="defD" value="0"><br>
+                <br>
+                <p><strong>Toughness:</strong></p><input type="text" id="tougD" name="tougD" value="0"><br>
                 <br>
                 <p><strong>Miscellaneous:</strong></p><br>
-                <button onclick="yoba()" id="yobaRing">Yoba's Blessing</button><br>
+                <button onclick="blockD()" id="blockD">Block</button><button onclick="evaD()" id="evasionD">Evasion</button><br>
                 <br>
                 <button onclick="dungCalc()">Calculate</button>
                 <p>Your EHP is: </p><p id="resultD"></p>
