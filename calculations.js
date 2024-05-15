@@ -523,6 +523,48 @@ function starCalc() {
 }
 
 
+//Dungreed
+function blockD() {
+    var blockDung = document.getElementById("blockD");
+    if (blockDung.style.border == "dotted") {
+        blockDung.style.border = "solid";
+    }
+    else if (blockDung.style.border == "solid") {
+        blockDung.style.border = "dotted";
+    }
+    else {
+        blockDung.style.border = "solid";
+    }
+}
+function evaD() {
+    var evaDung = document.getElementById("evasionD");
+    if (evaDung.style.border == "dotted") {
+        evaDung.style.border = "solid";
+    }
+    else if (evaDung.style.border == "solid") {
+        evaDung.style.border = "dotted";
+    }
+    else {
+        evaDung.style.border = "solid";
+    }
+}
+function dungCalc() {
+    var hpD = parseInt(document.getElementById("hpD").value);
+    var defD = parseInt(document.getElementById("defD").value);
+    var tougD = parseInt(document.getElementById("tougD").value);
+    var blockDung = document.getElementById("blockD");
+    var evaDung = document.getElementById("evasionD");
+    
+    if (blockDung.style.border == "solid") {
+        document.getElementById("resultD").innerText = "infinite";
+        return
+    }
+    if (evaDung.style.border == "solid") {
+        document.getElementById("resultD").innerText = "infinite";
+        return
+    }
 
-
+    var ehpDung = (hpD * (1 + Math.min((defD*0.01), 0.75))) + tougD;
+    document.getElementById("resultD").innerText = ehpDung;
+}
 
