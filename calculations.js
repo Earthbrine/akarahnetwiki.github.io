@@ -564,7 +564,17 @@ function dungCalc() {
         return
     }
 
-    var ehpDung = (hpD * (1 + Math.min((defD*0.01), 0.75))) + tougD;
+    var ehpDung = Math.floor((hpD * (1 + Math.min((defD*0.01), 0.75))) + tougD);
     document.getElementById("resultD").innerText = ehpDung;
 }
 
+
+//Kingdom of Loathing
+function kolCalc() {
+    var hpKL = parseInt(document.getElementById("hpKL").value);
+    var daKL = parseInt(document.getElementById("daKL").value);
+    var drKL = parseInt(document.getElementById("drKL").value);
+    var moxieKL = parseInt(document.getElementById("moxieKL").value);
+
+    
+}
