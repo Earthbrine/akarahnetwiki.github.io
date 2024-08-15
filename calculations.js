@@ -360,11 +360,13 @@ function wynnCalc() {
     var clSha = document.getElementById("shaman");
 
     //defining Major IDs
+    //NOTE: THERE MAY BE MORE NOW ********************************************************************************************************
     var dh = document.getElementById("divineHonor");
     var g = document.getElementById("guardian");
     var ss = document.getElementById("savioursSacrifice");
 
     //defining buffs
+    //NOTE: THERE MAY BE MORE NOW ********************************************************************************************************
     var r = document.getElementById("radiance");
     var ws = document.getElementById("warScream");
     var motb = document.getElementById("mantleOfTheBovimist");
@@ -382,6 +384,7 @@ function wynnCalc() {
     var ms = document.getElementById("mythrilSkin");
 
     //converting defense value to actual damage reduction value, checking if there is any agility
+    //NEED TO FIX DEFENSE **************************************************************************************************
     var dWef = defW * 0.0047;
     var aWgi = 0;
     if (agiW >= 1) {
@@ -424,6 +427,7 @@ function wynnCalc() {
     else if (clAs.style.border == "solid") {
         var clssW = 0;
         //checking if dissolution and/or mirror image are active
+        //DISSOLUTION WAS CHANGED, NEEDS A FIX *************************************************************************************
         if (d.style.border == "solid") {
             var dW = 0.75;
         }
@@ -434,6 +438,7 @@ function wynnCalc() {
     else if (clSha.style.border == "solid") {
         var clssW = -0.4;
         //checking which masks are active
+        //MASKS MAY HAVE BEEN CHANGED ***********************************************************************************************
         if (motl.style.border == "solid") {
             var maskMulti = -0.2;
         }
@@ -450,6 +455,7 @@ function wynnCalc() {
     var gW = 0;
     var ssW = 0;
     //checking which Major IDs are selected, but since Divine Honor affects radiance directly, it's not checked here
+    //THERE MAY BE MORE MIDs *******************************************************************************************************
     if (g.style.border == "solid") {
         var gW = 0.2;
     }
@@ -474,19 +480,17 @@ function wynnCalc() {
     if (ws.style.border == "solid") {
         var wsW = 0.2;
     }
+    //COTF MAY HAVE BEEN CHANGED ********************************************************************************************
     if (cotf.style.border == "solid") {
         var cotfW = 0.7;
     }
     
     //checking whether the player is invicible
     if (m.style.border == "solid") {
-        document.getElementById("resultW").innerText = "infinite";
+        document.getElementById("resultW").innerText = "infinite<br>This applies to true damage as well";
         return
     }
-    if (s.style.border == "solid") {
-        document.getElementById("resultW").innerText = "infinite";
-        return
-    }
+    //SUNFLARE DOES SOMETHING ELSE NOW
     
     var hpWb = hpbW * (1 + rW);
     
